@@ -37,13 +37,13 @@ export default function Timer() {
     <div className="timer-container">
       <h1 className="timer-display">{formatTime(time)}</h1>
       <div className="timer-buttons">
-        <button className="start-button" onClick={handleStart}>
+        <button className="start-button" onClick={handleStart} disabled={isRunning}>
           Start
         </button>
-        <button className="pause-button" onClick={handlePause}>
+        <button className="pause-button" onClick={handlePause} disabled={!isRunning}>
           Pause
         </button>
-        <button className="reset-button" onClick={handleReset}>
+        <button className="reset-button" onClick={handleReset} disabled={isRunning}>
           Reset
         </button>
       </div>
