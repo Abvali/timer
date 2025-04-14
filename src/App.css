@@ -28,9 +28,13 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.start-button {
+.start-button{
   background-color: #4caf50;
   color: white;
+}
+.start-button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
 }
 
 .start-button:hover {
@@ -41,7 +45,9 @@ button {
   background-color: #f44336;
   color: white;
 }
-
+.pause-button:disabled {
+  background-color: #888;
+}
 .pause-button:hover {
   background-color: #e53935;
 }
@@ -50,7 +56,9 @@ button {
   background-color: #2196f3;
   color: white;
 }
-
+.reset-button:disabled {
+  background-color: #888;
+}
 .reset-button:hover {
   background-color: #1e88e5;
 }
